@@ -1,0 +1,19 @@
+import math
+from scipy.constants import h, m_e
+
+def calculate_lowest_energy(width: float) -> float:
+    """
+    Calculate the lowest energy of an electron confined in a box of given width.
+
+    Parameters:
+    width (float): Width of the box in meters
+
+    Returns:
+    float: The lowest energy of the electron in Joules
+    """
+    n = 1 # quantum number
+    energy = (h**2 * n**2) / (8 * m_e * width**2)
+    return energy
+
+width = 1e-9 # width of the box in meters
+print(f"The lowest energy of an electron confined in a width of the box is {calculate_lowest_energy(width):.2e} J")
