@@ -1,0 +1,5 @@
+n=int (input ("numerator number"))
+d=int (input ("denominator number"))
+p=int( input ("power"))
+r=n**p%d
+print("answer",r)
