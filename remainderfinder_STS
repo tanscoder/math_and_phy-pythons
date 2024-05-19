@@ -3,3 +3,18 @@ d=int (input ("denominator number"))
 p=int( input ("power"))
 r=n**p%d
 print("answer",r)
+
+
+### part 2
+import math
+
+n=int (input("enter the number of values") )
+sum=0
+for i in range(n):
+   vl=int (input("enter the value"))
+   sum+=math.factorial(vl)
+
+d=int(input("enter denominator") )
+
+r=sum%d
+print("answer",r)
